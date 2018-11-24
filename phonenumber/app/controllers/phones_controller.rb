@@ -43,7 +43,10 @@ class PhonesController < ApplicationController
       end
     end
 
-
+    @ans << (keys.shift.product(*keys).map(&:join) & dictionary[11]).join(", ") # match with all character
+    time_end = Time.now()
+    @execution_time= (time_end.to_f - time_start.to_f).round(3)
+    render 'phones/index'
 
   end
 end
