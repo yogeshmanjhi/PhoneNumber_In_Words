@@ -1,11 +1,20 @@
 
 <h1 style="text-align: center;">This is Phone Number Conversion page</h1>
-
+<div style="text-align:center;margin-top: 5%;">
 <div style="text-align: center;">
 <%= form_for Phone.new, :url => { :action => "create" } do |f| %>
   <label>Phone</label>
-  <%= f.number_field :phone %>
+  <%= f.number_field :phone,:value=> @phone%>
 
   <%= f.submit "Submit" %>
 <% end %>
+</div>
+<div style="text-align: center;margin-top: 5%;">
+	<h3>Possible combination of words are:</h3>
+	<%= @ans %>
+	<div style="margin-top: 3%;">
+		This operation took <%= @execution_time %> ms
+	</div>
+</div>
+
 </div>
