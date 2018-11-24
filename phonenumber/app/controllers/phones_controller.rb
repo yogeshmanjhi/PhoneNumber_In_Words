@@ -3,8 +3,10 @@ class PhonesController < ApplicationController
   end
 
   def create
+  	time_start = Time.now()
     #getting the phone number from params
     phone=params[:phone][:phone]
+    @phone=phone
     #checking the validity of phone
     return [] if phone.nil? || phone.length!=10 || phone.split('').select{|d|d.to_i ==0 || d.to_i ==1}.length >0
     #creating mapping as given in the question
