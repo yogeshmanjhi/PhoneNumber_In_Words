@@ -1,0 +1,11 @@
+
+<h1 style="text-align: center;">This is Phone Number Conversion page</h1>
+
+<div style="text-align: center;">
+<%= form_for Phone.new, :url => { :action => "create" } do |f| %>
+  <label>Phone</label>
+  <%= f.number_field :phone %>
+
+  <%= f.submit "Submit" %>
+<% end %>
+</div>
