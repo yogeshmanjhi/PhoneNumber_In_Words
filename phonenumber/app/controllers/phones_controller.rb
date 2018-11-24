@@ -34,5 +34,16 @@ class PhonesController < ApplicationController
       temp[i] = [(combination1 & dictionary[i+2]), (combination2 & dictionary[max_index - i +1])] #common values calculation
     end
 
+    #arranging words
+    @ans = []
+    temp.each do |key, combinataions|
+      next if combinataions.first.nil? || combinataions.last.nil?
+      combinataions.first.product(combinataions.last).each do |combo_words|
+        @ans << combo_words
+      end
+    end
+
+
+
   end
 end
