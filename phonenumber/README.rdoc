@@ -6,12 +6,12 @@
 
 * To run the project follow the steps below
 
-	1. Do bundle install
+  1. Do bundle install
 
-	2. Run rake db:setup
+  2. Run rake db:setup
 
-	3. Start the server rails s
+  3. Start the server rails s
 
-	4. To go to homepage use url localhost:3000  
+  4. To go to homepage use url localhost:3000  
 
-	5. Enter any 10 digit phone number and see the possible words which can be used to remember that phone number 
+  5. Enter any 10 digit phone number and see the possible words which can be used to remember that phone number 
