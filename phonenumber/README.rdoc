@@ -14,4 +14,4 @@
 
 	4. To go to homepage use url localhost:3000  
 
-	5. Enter any 10 digit phone number and see the possible words which can be used 	    to remember that phone number 
+	5. Enter any 10 digit phone number and see the possible words which can be used to remember that phone number 
